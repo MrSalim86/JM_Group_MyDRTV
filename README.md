@@ -1,7 +1,17 @@
-## The JM Team
+## 🌟 The JM Team 🌟
 
-- **Mohamed Salim**  [LinkedIn](https://www.linkedin.com/in/mohamed-salim-467a93235/)
-- **Jamal Ahmed**  [LinkedIn](https://www.linkedin.com/in/jamal-ahmed-7b4531169/)
+Meet the dedicated members of the **JM Team**, committed to bringing the MyDRTV project to life!
+
+- **👤 Mohamed Salim**  
+  [🔗 LinkedIn](https://www.linkedin.com/in/mohamed-salim-467a93235/)  
+  Passionate about software development and creating engaging user experiences.
+
+- **👤 Jamal Ahmed**  
+  [🔗 LinkedIn](https://www.linkedin.com/in/jamal-ahmed-7b4531169/)  
+  Focused on innovative solutions and enhancing digital transformation.
+
+-** 🎉
+
 
 # 🌟 Project Overview: MyDRTV 🌟
 
