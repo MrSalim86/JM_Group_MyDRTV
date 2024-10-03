@@ -1,3 +1,8 @@
+## The JM Team
+
+- **Mohamed Salim**  [LinkedIn](https://www.linkedin.com/in/mohamed-salim-467a93235/)
+- **Jamal Ahmed**  [LinkedIn](https://www.linkedin.com/in/jamal-ahmed-7b4531169/)
+
 # 🌟 Project Overview: MyDRTV 🌟
 
 ## 📺 Project Overview
