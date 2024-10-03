@@ -1,42 +1,34 @@
 ## 🌟 The JM Team 🌟
 
-Meet the dedicated members of the **JM Team**, committed to bringing the MyDRTV project to life!
+Mød det dedikerede team bag **JM Team**, som arbejder hårdt for at bringe MyDRTV-projektet til live!
 
 - **👤 Mohamed Salim**  
   [🔗 LinkedIn](https://www.linkedin.com/in/mohamed-salim-467a93235/)  
-  
 
 - **👤 Jamal Ahmed**  
   [🔗 LinkedIn](https://www.linkedin.com/in/jamal-ahmed-7b4531169/)  
 
+---
 
+# 🌟 Projektoversigt: MyDRTV 🌟
 
+## 📺 Projektoversigt
+Velkommen til **MyDRTV**! Dette innovative projekt er fokuseret på at skabe en banebrydende videoplayer og et socialt netværk for Danmarks statsmedie. Vores mission? At præsentere og promovere dansk tv og film globalt og gøre en skattekiste af klassiske tv-programmer tilgængelige for publikum over hele verden! 🌍
 
-# 🌟 Project Overview: MyDRTV 🌟
+Vi udforsker outsourcing-muligheder for at optimere udviklingsomkostningerne, især i Østeuropa og Asien, og vil omhyggeligt definere løsningsarkitekturen og teknologistakken for at opfylde både økonomiske og funktionelle krav. 💻
 
-## 📺 Project Overview
-Welcome to **MyDRTV**! This innovative project is focused on creating a cutting-edge video player and social networking platform for the state broadcaster in Denmark. Our mission? To showcase and promote Danish television and film on a global scale, making a treasure trove of classic TV programs accessible to audiences around the world! 🌍
+## 📜 Krav
+MyDRTV-platformen er designet med fokus på brugervenlighed og indeholder en række vigtige funktioner:
 
-As we explore outsourcing options to optimize development costs—particularly in Eastern Europe and Asia—we will meticulously define the solution architecture and technology stack to meet both economic and functional requirements. 💻
-
-## 📜 Requirements
-The MyDRTV platform is designed with users in mind, featuring a host of essential capabilities:
-
-- **👤 User Accounts:** Users can create personalized accounts for a tailored experience.
-- **⭐ Ratings System:** Community-driven evaluations allow users to rate programs and share their opinions.
-- **🔍 Search Functionality:** A versatile search engine that enables users to find films and TV shows using various criteria, such as:
-  - Year of production
-  - Title
+- **👤 Brugerkonti:** Brugere kan oprette personlige konti for en skræddersyet oplevelse.
+- **⭐ Bedømmelsessystem:** Brugere kan bedømme programmer og dele deres meninger gennem fællesskabsdrevne evalueringer.
+- **🔍 Søgefunktionalitet:** En alsidig søgemaskine gør det muligt for brugere at finde film og tv-shows ud fra forskellige kriterier som:
+  - Produktionsår
+  - Titel
   - Genre
 
-### ⚡ High Availability
-Ensuring high availability is paramount due to the reputational risks associated with delivering a reliable and engaging user experience. Our system will integrate a widely used rating system to encourage user interaction and foster vibrant conversations about classic TV programs and films. 🗣️
+### ⚡ Høj Tilgængelighed
+At sikre høj tilgængelighed er afgørende på grund af de omdømmemæssige risici, der er forbundet med at levere en pålidelig og engagerende brugeroplevelse. Vores system vil integrere et populært bedømmelsessystem for at fremme brugerinteraktion og skabe livlige samtaler om klassiske tv-programmer og film. 🗣️
 
-### 🚀 Digital Transformation Goals
-MyDRTV is a key component of the Danish Broadcasting Corporation's (DR) broader digital transformation strategy, focusing on several vital business aspects:
-
-- **📈 Marketing DR Services:** Actively promote services to attract potential customers.
-- **🤝 User Engagement:** Enhance interactivity through the ratings system and suggest similar programs to keep users engaged longer.
-- **🔒 GDPR Compliance:** Uphold the highest standards of data protection, ensuring personally identifiable information is managed in strict accordance with GDPR regulations.
-
-Our project is not just about entertainment; it’s about celebrating and preserving the cultural heritage of Denmark while adhering to global standards for user data protection. Join us on this exciting journey! 🎉
+### 🚀 Digitale Transformationsmål
+MyDRTV er en nøglekomponent i Danmarks Radio's
