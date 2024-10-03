@@ -1,6 +1,6 @@
-## 🌟 The JM Team 🌟
+## 🌟 JM Group 🌟
 
-Mød det dedikerede team bag **JM Team**, som arbejder hårdt for at bringe MyDRTV-projektet til live!
+Mød det dedikerede team bag **JM Group**, som arbejder hårdt for at bringe MyDRTV-projektet til live!
 
 - **👤 Mohamed Salim**  
   [🔗 LinkedIn](https://www.linkedin.com/in/mohamed-salim-467a93235/)  
