@@ -87,11 +87,99 @@ Baseret på ovenstående analyse har vi valgt **mikroservices-arkitektur** som d
 - **Datahåndtering og -lagring**: Beslutning om datahåndtering, herunder valg af databaser og strategier for datareplikation og -synkronisering, herunder muligheden for hver mikroservice at have sin egen database for at sikre uafhængighed.
 
 ## 📊 Diagrams
-Vi vil inkludere følgende diagrammer for at visualisere arkitekturen:
-- **Use Case Diagram**: Vis brugerinteraktioner som oprettelse af konti, vurdering af programmer og søgning efter indhold.
-- **Domænemodel**: Illustrer nøgleenheder (Bruger, Program, Vurdering) og deres relationer.
-- **Aktivitetsdiagram**: Skildre brugerflows for almindelige handlinger som at vurdere et program.
+Vi vil inkludere følgende diagram for at visualisere arkitekturen:
 - **Sekvensdiagram**: Detaljer interaktioner mellem brugergrænsefladen, mikroservices og databasen under handlinger som at indsende en vurdering.
+
+# MyDRTV Sequence Diagrams
+
+
+## Table of Contents
+1. [User Registration and Login](#1-user-registration-and-login)
+2. [Viewing and Rating a Program](#2-viewing-and-rating-a-program)
+3. [Search and Recommendation Generation](#3-search-and-recommendation-generation)
+
+## 1. User Registration and Login
+
+This sequence diagram focuses on how a user registers and logs in to the system.
+
+### **Actors and Components**
+- **User**: The person interacting with the system.
+- **UI/Client**: The frontend interface.
+- **User Service**: Handles user registration, login, and GDPR.
+- **GDPR Compliance Service**: Handles GDPR consent.
+- **Database**: Stores user information.
+
+### **Sequence**
+1. **User** ➔ **UI/Client**: Enters registration information.
+2. **UI/Client** ➔ **User Service**: `RegisterUser` command with user info.
+3. **User Service** ➔ **GDPR Compliance Service**: Verifies GDPR consent.
+4. **GDPR Compliance Service** ➔ **User Service**: GDPR consent validation result.
+5. **User Service** ➔ **Database**: Stores user information.
+6. **Database** ➔ **User Service**: Confirmation of user storage.
+7. **User Service** ➔ **UI/Client**: Registration confirmation.
+8. **User** ➔ **UI/Client**: Logs in with credentials.
+9. **UI/Client** ➔ **User Service**: `LoginUser` command.
+10. **User Service** ➔ **Database**: Validates credentials.
+11. **Database** ➔ **User Service**: Login success/failure.
+12. **User Service** ➔ **UI/Client**: Login response.
+
+## 2. Viewing and Rating a Program
+
+This diagram captures the scenario of viewing a TV program and submitting a rating.
+
+### **Actors and Components**
+- **User**: The person interacting with the system.
+- **UI/Client**: The frontend interface.
+- **Content Service**: Handles content requests.
+- **User Service**: Validates user session.
+- **Rating Service**: Manages rating submissions.
+- **Database**: Stores content and ratings data.
+
+### **Sequence**
+1. **User** ➔ **UI/Client**: Searches for a TV program.
+2. **UI/Client** ➔ **Content Service**: `PerformSearch` with search terms.
+3. **Content Service** ➔ **Database**: Retrieves matching programs.
+4. **Database** ➔ **Content Service**: Returns search results.
+5. **Content Service** ➔ **UI/Client**: Displays search results.
+6. **User** ➔ **UI/Client**: Selects a program to view.
+7. **UI/Client** ➔ **Content Service**: `ViewProgram` command.
+8. **Content Service** ➔ **Database**: Retrieves program details.
+9. **Database** ➔ **Content Service**: Returns program information.
+10. **Content Service** ➔ **UI/Client**: Displays program details.
+11. **User** ➔ **UI/Client**: Submits a rating.
+12. **UI/Client** ➔ **User Service**: Validates user session.
+13. **User Service** ➔ **UI/Client**: Session valid.
+14. **UI/Client** ➔ **Rating Service**: `RateProgram` command with rating details.
+15. **Rating Service** ➔ **Database**: Stores the rating.
+16. **Database** ➔ **Rating Service**: Confirmation of storage.
+17. **Rating Service** ➔ **UI/Client**: Rating submission confirmation.
+
+## 3. Search and Recommendation Generation
+
+This diagram covers how a user searches for a program and receives recommendations.
+
+### **Actors and Components**
+- **User**: The person interacting with the system.
+- **UI/Client**: The frontend interface.
+- **Search Service**: Handles search queries.
+- **Recommendation Service**: Generates personalized recommendations.
+- **Database**: Stores program and user interaction data.
+
+### **Sequence**
+1. **User** ➔ **UI/Client**: Enters search criteria.
+2. **UI/Client** ➔ **Search Service**: `PerformSearch` command.
+3. **Search Service** ➔ **Database**: Searches for programs based on criteria.
+4. **Database** ➔ **Search Service**: Returns search results.
+5. **Search Service** ➔ **UI/Client**: Displays search results.
+6. **User** ➔ **UI/Client**: Views a program.
+7. **UI/Client** ➔ **Recommendation Service**: Triggers `GenerateRecommendations` based on the program viewed.
+8. **Recommendation Service** ➔ **Database**: Retrieves user preferences and interaction history.
+9. **Database** ➔ **Recommendation Service**: Returns relevant data.
+10. **Recommendation Service** ➔ **Database**: Fetches recommended content.
+11. **Database** ➔ **Recommendation Service**: Returns recommended content.
+12. **Recommendation Service** ➔ **UI/Client**: Displays recommendations to the user.
+
+
 
 ## 🎉 Konklusion
 MyDRTV-projektet er ikke bare underholdning; det handler om at fejre og bevare den kulturelle arv i Danmark, samtidig med at vi overholder globale standarder for databeskyttelse. Vi ser frem til at realisere dette spændende projekt! 
