@@ -179,7 +179,8 @@ This diagram covers how a user searches for a program and receives recommendatio
 11. **Database** ➔ **Recommendation Service**: Returns recommended content.
 12. **Recommendation Service** ➔ **UI/Client**: Displays recommendations to the user.
 
-
+### Sequence Diagram
+![Container Diagram](/sekvensdiagram.jpg)
 
 ## 🎉 Konklusion
 MyDRTV-projektet er ikke bare underholdning; det handler om at fejre og bevare den kulturelle arv i Danmark, samtidig med at vi overholder globale standarder for databeskyttelse. Vi ser frem til at realisere dette spændende projekt! 
